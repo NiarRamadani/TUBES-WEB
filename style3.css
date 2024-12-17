@@ -1,0 +1,117 @@
+/* Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body dan Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f8f1e0, #e0dcd2); /* Background yang lembut */
+    color: #333;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    color: #6a4c3b;
+    margin: 20px 0;
+}
+
+/* Tabel Menu */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Header Kolom Tabel */
+table th {
+    background-color: #8c6f5a;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #6a4c3b;
+    font-size: 16px;
+}
+
+/* Data Tabel */
+table td {
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid #6a4c3b;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+table tr:hover {
+    background-color: #f0e6d6;
+    transform: scale(1.02);
+}
+
+/* Tombol */
+button,
+a {
+    display: inline-block;
+    background-color: #8c6f5a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover,
+a:hover {
+    background-color: #6a4c3b;
+    transform: translateY(-2px);
+}
+
+/* Tombol Kembali */
+.back-btn {
+    text-align: center;
+    color: white;
+    background-color: #8c6f5a;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background-color: #6a4c3b;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    button {
+        padding: 6px 12px;
+    }
+}

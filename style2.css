@@ -1,0 +1,102 @@
+/* Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f1e0; /* Latar cokelat lembut */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #fff8e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #8c6f5a;
+}
+
+/* Header Style */
+.login-container h2 {
+    color: #6a4c3b;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #6a4c3b;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #8c6f5a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #8c6f5a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+form button:hover {
+    background-color: #6a4c3b;
+}
+
+/* Error Message */
+p {
+    margin: 10px 0;
+    color: red;
+}
+
+/* Responsif untuk berbagai ukuran layar */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    form input,
+    form button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    form input {
+        font-size: 14px;
+    }
+
+    form button {
+        padding: 8px 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
